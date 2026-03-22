@@ -102,7 +102,7 @@ Returns nearby restaurants using OpenStreetMap data.
 - Restaurant Grid View
   <img width="1916" height="782" alt="image" src="https://github.com/user-attachments/assets/484317f7-12e0-455b-b7b6-50177053d0ad" />
 
-- Dropdown Reviews Section
+- Dropdown Section
   <img width="957" height="893" alt="image" src="https://github.com/user-attachments/assets/32d18f1a-798a-4a22-b5a4-df9f864d6d71" />
 
 ---
