@@ -97,13 +97,13 @@ Returns nearby restaurants using OpenStreetMap data.
 📸 Screenshots
 
 - Home Page with Map
-- <img width="1912" height="842" alt="image" src="https://github.com/user-attachments/assets/630e4bee-4bd1-408b-bae1-e407362a8062" />
+  <img width="1912" height="842" alt="image" src="https://github.com/user-attachments/assets/630e4bee-4bd1-408b-bae1-e407362a8062" />
 
 - Restaurant Grid View
-- <img width="1916" height="782" alt="image" src="https://github.com/user-attachments/assets/484317f7-12e0-455b-b7b6-50177053d0ad" />
+  <img width="1916" height="782" alt="image" src="https://github.com/user-attachments/assets/484317f7-12e0-455b-b7b6-50177053d0ad" />
 
 - Dropdown Reviews Section
-- <img width="957" height="893" alt="image" src="https://github.com/user-attachments/assets/32d18f1a-798a-4a22-b5a4-df9f864d6d71" />
+  <img width="957" height="893" alt="image" src="https://github.com/user-attachments/assets/32d18f1a-798a-4a22-b5a4-df9f864d6d71" />
 
 ---
 
