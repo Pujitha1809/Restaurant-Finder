@@ -139,4 +139,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👩‍💻 Author
 
-**Pujitha** — [GitHub](https://github.com/Pujitha1809)
+**Pujitha Mamidishetty** — [GitHub](https://github.com/Pujitha1809)
