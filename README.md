@@ -1,138 +1,142 @@
-🍽️ Cafe & Restaurant Finder
+# 🍽️ Cafe & Restaurant Finder
 
-A full-stack web application that helps users discover nearby cafes and restaurants based on their current location. Built using React (Frontend) and Flask (Backend) with real-time data from the OpenStreetMap Overpass API.
-
----
-
-🚀 Features
-
-- 📍 Detects user's current location
-- 🔎 Search restaurants by name
-- 📏 Filter by distance
-- 🗺️ Interactive map using Leaflet
-- 🖼️ Custom restaurant images
-- ⭐ Ratings, cuisine & pricing display
-- ⏱️ Distance and estimated travel time
-- 📖 Expandable dropdown with reviews
-- 💻 Responsive grid layout (Zomato-style UI)
+A full-stack web application that helps users discover nearby cafes and restaurants on an interactive map. Built with **React** (frontend) and **Python Flask** (backend), powered by the **OpenStreetMap Overpass API**.
 
 ---
 
-🛠️ Tech Stack
+## 📸 Screenshots
 
-Frontend
+### 🗺️ Map View
+<img src="https://github.com/user-attachments/assets/74607f6d-1c0c-4e07-8d55-fbbc3dcdeda4" width="700" alt="Map View"/>
 
-- React.js
-- JavaScript (ES6)
-- CSS
-- Leaflet (Maps)
+### 🍽️ Restaurant Card
+<img src="https://github.com/user-attachments/assets/70e92fe2-11df-451f-a140-8fccab58f12a" width="400" alt="Restaurant Card"/>
 
-Backend
-
-- Flask (Python)
-- Flask-CORS
-- Requests
-
-API
-
-- OpenStreetMap Overpass API
+### 📋 Restaurant Detail
+<img src="https://github.com/user-attachments/assets/a406d397-f53e-49a3-8c2b-5251205f7dd0" width="400" alt="Restaurant Detail"/>
 
 ---
 
-📁 Project Structure
+## ✨ Features
 
+- 🗺️ Interactive map showing nearby restaurants using Leaflet.js
+- 🔍 Search restaurants by name
+- 📏 Filter by distance (e.g. 1 km, 5 km, 10 km)
+- ⭐ View ratings, cuisine type, price, and travel time
+- 🟢 See which restaurants are open right now
+- 📍 Click on map markers to highlight restaurants
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|------------|
+| Frontend | React.js, Leaflet.js |
+| Backend | Python, Flask |
+| Map Data | OpenStreetMap / Overpass API |
+| Styling | CSS |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/) (v14 or above)
+- [Python](https://www.python.org/) (v3.8 or above)
+- pip (Python package manager)
+
+---
+
+### 🔧 Backend Setup
+
+```bash
+# Navigate to the backend folder
+cd backend
+
+# Install required Python packages
+pip install flask requests flask-cors
+
+# Start the Flask server
+python app.py
+```
+
+The backend will run at: `http://localhost:5000`
+
+---
+
+### 💻 Frontend Setup
+
+Open a **new terminal** and run:
+
+```bash
+# Navigate to the frontend folder
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start the React app
+npm start
+```
+
+The frontend will open at: `http://localhost:3000`
+
+---
+
+### ⚠️ Important
+
+> You need **both servers running at the same time** — backend on port `5000` and frontend on port `3000`.
+
+---
+
+## 📁 Project Structure
+
+```
 Restaurant-Finder/
-│
 ├── backend/
-│   └── app.py
-│
+│   └── app.py              # Flask API server
 ├── frontend/
 │   ├── public/
-│   │   └── images/
+│   │   └── images/         # Restaurant images
 │   ├── src/
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   └── package.json
+│   │   ├── components/
+│   │   │   ├── MapView.js
+│   │   │   ├── Navbar.js
+│   │   │   ├── RestaurantCard.js
+│   │   │   └── SearchBar.js
+│   │   └── pages/
+│   │       ├── Finder.js
+│   │       ├── Home.js
+│   │       └── RestaurantDetails.js
+└── README.md
+```
 
 ---
 
-⚙️ Installation & Setup
+## 🌐 How It Works
 
-1️⃣ Clone the repository
-
-git clone https://github.com/your-username/restaurant-finder.git
-cd restaurant-finder
-
----
-
-2️⃣ Setup Backend (Flask)
-
-cd backend
-pip install flask flask-cors requests
-python app.py
-
-➡️ Runs on: "http://127.0.0.1:5000"
+1. The React frontend sends the user's location to the Flask backend
+2. The backend queries the **Overpass API** (OpenStreetMap) for nearby restaurants
+3. Results are returned and displayed on the interactive **Leaflet map**
+4. Users can search, filter, and click on restaurants to view details
 
 ---
 
-3️⃣ Setup Frontend (React)
+## 🤝 Contributing
 
-cd frontend
-npm install
-npm start
-
-➡️ Runs on: "http://localhost:3000"
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
 
 ---
 
-🔗 API Endpoint
+## 📄 License
 
-GET /restaurants?lat=<latitude>&lng=<longitude>
-
-Returns nearby restaurants using OpenStreetMap data.
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-📸 Screenshots
+## 👩‍💻 Author
 
-- Home Page with Map
-  <img width="1912" height="842" alt="image" src="https://github.com/user-attachments/assets/630e4bee-4bd1-408b-bae1-e407362a8062" />
-
-- Restaurant Grid View
-  <img width="1916" height="782" alt="image" src="https://github.com/user-attachments/assets/484317f7-12e0-455b-b7b6-50177053d0ad" />
-
-- Dropdown Section
-  <img width="957" height="893" alt="image" src="https://github.com/user-attachments/assets/32d18f1a-798a-4a22-b5a4-df9f864d6d71" />
-
----
-
-🌟 Future Enhancements
-
-- ❤️ Favorites system
-- 📍 Restaurant detail page
-- 🧭 Route navigation
-- 🔥 Advanced filters (rating, price)
-- 🎨 Improved animations
-
----
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to fork this repo and submit a pull request.
-
----
-
-📜 License
-
-This project is open-source and available under the MIT License.
-
----
-
-👩‍💻 Author
-
-Pujitha Mamidishetty
-BTech Data Science | AR/VR Minor
-Usha Mittal Institute of Technology
-
----
+**Pujitha** — [GitHub](https://github.com/Pujitha1809)
